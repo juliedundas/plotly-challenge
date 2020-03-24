@@ -122,6 +122,12 @@ function updateGraph(sample) {
   });
 }
 
+//Create function to update chart each time a new sample is selected
+function optionChanged(updatedSample) {
+  updateGraph(updatedSample);
+  updateMetaData(updatedSample);
+}
+
 //updateMetaData();
 
 // Use filter() to pass the function as its argument
